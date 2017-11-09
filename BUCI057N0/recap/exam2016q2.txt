@@ -1,0 +1,20 @@
+# Question 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Total: 5 marks
+# Where
+# AND = ∧
+# OR = ∨
+# NOT = ¬
+# Construct the truth-table for the Boolean function given by the formula
+# F = (¬A ∧ B) ∨ (A ∧ B ∧ C) ∨ (¬B ∧ C)
+
+               (1)          (2)        (3)
+A   B   C   (¬A ∧ B)    (A ∧ B ∧ C) (¬B ∧ C)    1 v 2 v 3
+T   T   T   F ∧ T = F       T       F ∧ T = F   F v T v F = T *
+T   T   T   F ∧ T = F       T       F ∧ T = F   F v T v F = T *
+T   T   F   F ∧ T = F       F       F ∧ F = F   F v F v F = F *
+T   F   T   F ∧ F = F       F       T ∧ T = T   F v F v T = T *
+T   F   F   F ∧ F = F       F       T ∧ F = F   F v F v F = F *
+F   T   T   T ∧ T = T       F       F ∧ T = T   T v F v T = T *
+F   T   F   T ∧ T = T       F       F ∧ F = F   T v F v F = T *
+F   F   T   T ∧ F = F       F       T ∧ T = T   F v F v T = T *
+F   F   F   T ∧ F = F       F       T ∧ F = F   F v F v F = F *
+

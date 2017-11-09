@@ -1,0 +1,6 @@
+Convert any decimal number between 0 and 255 into binary.
+Convert any binary number between 0 and 11111111 into decimal (i.e. 0 to 255)
+Convert any binary number from 0 to 111111111 into octal
+Convert any octal number from 0 to 777 into binary
+Convert any binary number from 0 to 1111 1111 1111 1111 into hex
+Convert any hex number from 0 to FFFF into binary

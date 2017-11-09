@@ -1,0 +1,33 @@
+*
+A   B   A^B AvB
+---------------
+T   T   T   T
+T   F   F   T
+F   T   F   T
+F   F   F   F
+
+
+**
+A   B   A => B
+--------------
+T   T   T
+T   F   F
+F   T   F
+F   F   T
+
+
+¬ A ^ B (B v C) => A ^ C
+
+
+             *      *           *       *
+             1      2           LEFT    RIGHT       **
+A   B   C   ¬A      (B v C)     1^2     A ^ C       LEFT => RIGHT
+-----------------------------------------------------------------
+F   F   F   T       F           F       F           T
+F   F   T   T       T           T       F           F
+F   T   F   T       T           T       F           F
+F   T   T   T       T           T       F           F
+T   F   F   F       F           F       F           T
+T   F   T   F       T           F       T           T
+T   T   F   F       T           F       F           T
+T   T   T   F       T           F       T           T

@@ -1,0 +1,57 @@
+4. Consider these functions:
+
+def f(x):
+    return g(x) + math.sqrt(h(x))
+
+def g(x):
+    return 4 * h(x)
+
+def h(x):
+    return x * x + k(x) - 1
+
+def k(x):
+    return 2 * (x + 1)
+
+Without actually compiling and running a program, determine the results of the following function calls:
+
+(a) x1 = f(2)
+    k(2) = 2 * (2 + 1) = 6
+    h(2) = 2 * 2 + 6 - 1 = 9
+    g(2) = 4 * 9 = 36
+    f(2) = 36 + 3 = 39
+    x1 = 39
+
+(b) x2 = g(h(2))
+    h(2) = 9
+    g(9) = 4 * 9 = 36
+    x2 = 36
+
+(c) x3 = k(g(2) + h(2))
+    k(2) = 2 * (2 + 1) = 6
+    h(2) = 2 * 2 + 6 - 1 = 9
+    g(2) = 4 * 9 = 36
+    k(36 +9) = 2 * (45 + 1) = 92
+    x3 = 92
+
+(d) x4 = f(0) + f(1) + f(2)
+    k(0) = 2 * (0 + 1) = 2
+    h(0) = 0 * 0 + 2 - 1 = 1
+    g(0) = 4 * 1 = 4
+    f(0) = 4 + 1 = 5
+
+    k(1) = 2 * (1 + 1) = 4
+    h(1) = 1 * 1 + 4 - 1 = 4
+    g(1) = 4 * 4 = 16
+    f(1) = 16 + 2 = 18
+
+    f(2) = 39
+
+    x4 = 5 + 18 + 39 = 62
+
+(e) x5 = f(-1) + g(-1) + h(-1) + k(-1)
+    k(-1) = 2 * (-1 + 1) = 0
+    h(-1) = -1 * -1 +0 -1 = 0
+    g(-1) = 4 * 0 = 0
+    f(-1) = 0 + 0
+    x5 = 0
+

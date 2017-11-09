@@ -1,0 +1,63 @@
+p = I ate right
+q = I exercised
+r = I cooked
+
+Negation (NOT = ¬)
+
+p  ¬p
+-----
+T   F
+F   T
+
+
+Conjunction (AND = ^)
+
+p   q   p^q
+-----------
+T   T    T
+T   F    F
+F   T    F
+F   F    F
+
+
+Disjunction (OR = v)
+
+p   q   pvq
+-----------
+T   T    T
+T   F    T
+F   T    T
+F   F    F
+
+
+Exercises
+
+p   q   p^q    ¬(p^q)
+---------------------
+T   T    T       F
+T   F    F       T
+F   T    F       T
+F   F    F       T
+
+
+p   q   r   p^q  (p^q)vr
+------------------------
+T   T   T    T     T
+T   T   F    T     T
+T   F   F    F     F
+T   F   T    F     T
+F   T   T    F     T
+F   T   F    F     F
+F   F   T    F     T
+F   F   F    F     F
+
+
+p   w   t   p^w   ¬wvt    (p^w)^(¬wvt)
+T   T   T    T      T       T
+T   T   F    T      F       F
+T   F   T    F      T       F
+T   F   F    F      T       F
+F   T   T    F      T       F
+F   T   F    F      F       F
+F   F   T    F      T       F
+F   F   F    F      T       F

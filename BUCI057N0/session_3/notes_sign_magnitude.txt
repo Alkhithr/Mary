@@ -1,0 +1,85 @@
+-1
+
+sign and magnitude
+
+MSB represents the sign, either +ve, -ve
+
+If the MSB is 1 it indicates negative
+
+11111111 -> -1 +128 ( or 2 **7 - 1)
+01111111 -> +127
+00000000 -> 0
+10000000 -> -0
+
+
+Two's Complement
+
+0000 = 0
+0001 = 1
+0111 = 7
+
+1111 = -1
+1110 = -2
+1101 = -3
+...
+1000 = -8
+
+CONVERT TO NEGATIVE
+
+1 = 001
+add 0 to the left 0001
+invert 1110
+add 1 1111
+
+
+4 = 100
+add 0  0100
+invert 1011
+add 1  1100 (1011 + 0001 = 1100)
+
+
+-7 +7
+
+7 = 111
++0 = 0111
+invert = 1000
++1 = 1001
+1001 + 0111 = 0000 (anything that overflows or underflows cannot be represented so 1001 + 0111 != 10000 BUT = 0000)
+
+
+-3 +4
+
+1101 -> -3
+0100 -> +4
+0001 answer has overflowed
+
+
+
+1111 /
+0010
+0111
+
+OR 15 / 2 = 7 (instead of 7.5)
+
+1111 *
+0010
+----
+1110
+
+-7 +5 = 1001 + 0101 = 1110 denary 0001 + 0001 = 0010 = 2
+
+-2 +3 = ?
+
+010, 0010, 1101, 1101
+                 0001 = 1110
+                        0011 = 0001
+
+111 + 0 0111
+1000
+0001
+
+1001
+0101
+----
+1110
+

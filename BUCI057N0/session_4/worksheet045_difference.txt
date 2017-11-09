@@ -1,0 +1,7 @@
+5. What is the difference between an argument and a return value? How many arguments
+can a function call have? How many return values?
+
+An argument is a required parameter for a function to run
+A return value is a value returned at the end of the function execution
+Many but in theory anything over three should be questioned
+There is only one return value

@@ -1,0 +1,29 @@
+6. For each of the variables in the following program, indicate the scope. Then determine
+what the program prints, without actually running the program.
+
+a = 0
+b = 5
+
+def main() :
+    global a, b
+    i = 10
+    b = g(i)
+    print(a + b + i)
+
+main will try to execute (a=)0 + (b=g(i)=)None + (i=)10 which will fail because one can't add None and integer
+
+def f(i) :
+    n = 0
+    while n * n <= i :
+        n=n+ 1
+    return n - 1
+
+For a given i (in the case of i=0 from the below function) this will likely output (1 - 1 =) 0
+
+def g(a):
+    b = 0
+    for n in range(a):
+        i = f(n)
+        b = b + i
+
+This will output None - there is neither print nor return statements

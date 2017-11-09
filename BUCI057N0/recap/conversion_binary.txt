@@ -1,0 +1,31 @@
+Binary to Decimal
+Binary to Octal
+Binary to Hex
+
+Binary to decimal
+-----------------
+
+10000010
+
+256 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1
+        1    0    0    0   0   0   1   0 = 130
+
+
+
+Binary to Octal
+---------------
+
+Break to triplets and add leading 0s on the far left if needed
+
+10110011    = 010 110 011   = 263
+
+Binary to Hex
+-------------
+
+Break to quadruples
+
+0, 1, 2, 3, 4, 5, 6, 7, 8 , 9, A, B, C, D, E, F
+
+256 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1
+
+11010010    = 1101 0010 = D2

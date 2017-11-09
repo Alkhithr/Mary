@@ -1,0 +1,180 @@
+Binary, Octal, Hexadecimal
+--------------------------
+
+0, 1, 10, 11, 100, 101, 110, 111 ...
+
+0, 1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 14, 15, 16, 17, 20 ...
+
+0, 1, 2, 3, 4, 5, 6, 7, 8 , 9, 10, A, B, C, D, E, F, 10, 11 ...
+
+
+Binary to Octal
+---------------
+
+    To convert 11100101 bin -> oct
+
+    1. Split it into triplets (introducing a leading 0 as its length is 8): 011 100 101
+
+    2. Use the below table:
+
+    000 -> 0
+    001 -> 1
+    010 -> 2
+    011 -> 3
+    100 -> 4
+    101 -> 5
+    110 -> 6
+    111 -> 7
+
+    ... to convert 011 100 101
+
+    011 = 3
+    100 = 4
+    101 = 5
+
+    11100101 === 345 oct
+
+
+Binary to Decimal
+-----------------
+
+    To convert 1110000000 bin -> dec
+
+    1. result = 0
+    2. remove the most significant bit (msb)
+    3. add it to result
+        result = 1
+    4. multiply x 2
+        result = 2
+        110000000
+        if no more binary digits left then STOP
+        if not, go back to step 2. remove
+
+        result = 2
+
+    1110000000: 0+1   = 1 * 2   = 2
+     110000000: 2+1   = 3 * 2   = 6
+      10000000: 6+1   = 7 * 2   = 14
+       0000000: 14+0  = 14 * 2  = 28
+        000000: 28+0  = 28 * 2  = 56
+         00000: 56+0  = 56 * 2  = 112
+          0000: 112+0 = 112 * 2 = 224
+           000: 224+0 = 224 * 2 = 448
+            00: 448+0 = 448 * 2 = 896
+             0: 896+0 = 896 * 2 = 1792
+
+Decimal to Binary
+-----------------
+
+1792
+
+number  div res     remainder   result
+1792 /  2 = 896     0             0
+896  /  2 = 448     0            00
+448  /  2 = 224     0           000
+224  /  2 = 112     0          0000
+112  /  2 = 56      0         00000
+56   /  2 = 28      0        000000
+28   /  2 = 14      0       0000000
+14   /  2 = 7       0      00000000
+7    /  2 = 3       1     100000000
+3    /  2 = 1       1    1100000000
+1    /  2 = 0       1   11100000000
+
+1792 dec = 11100000000 bin
+
+Decimal to Octal
+----------------
+
+number  div res     remainder   result
+1792 / 8 = 224      0           0
+224  / 8 = 28       0           00
+28  / 8  = 3        4           004
+3   / 8  = 0        3           0043
+
+1792 dec = 0043 oct
+
+Decimal to Hexadecimal
+----------------------
+
+number  div res     remainder   result
+1972 / 16 = 112     0           0
+112  / 16 = 7       0           00
+7    / 16 = 0       7           700
+
+1972 dec = 700 hex
+
+number  div res     remainder   result
+48879 / 16 = 3054   15          F
+3054  / 16 = 190    14          EF
+190   / 16 = 11     14          EEF
+11    / 16 = 0      11          BEEF
+
+48879 dec = BEEF hex
+
+
+Octal to Binary
+---------------
+
+345
+
+011 100 101
+
+
+Octal to Hex (turn Octal -> Binary and then Binary -> Hex)
+----------------------------------------------------------
+
+345 (add a leading zero) (GOOGLE THIS ONE)
+
+0011 0100 0101
+
+0    E    5
+
+345 oct = 0E5 bin
+
+Octal to Decimal
+----------------
+
+345 0   + 3 = 3  * 8 = 24
+45  24  + 4 = 28 * 8 = 224
+5   224 + 5 = 229 DONE
+
+345 oct = 229 dec
+
+
+Hexadecimal to Binary (GOOGLE THIS ONE)
+---------------------------------------
+
+A 2 D E
+
+1010 0010 1101 1110
+
+Hex to Oct
+
+1010001011011110
+
+Split to triplets
+
+1 010 001 011 011 110
+
+1 2   1
+
+
+Hex to Dec
+----------
+
+A2DE
+
+A * 16 * 16 * 16    = 10 * 16 * 16 * 16
++
+2 * 16 * 16         = 2 * 16 * 16
++
+D * 16              = 13 * 16
++
+E * 1               = 15 * 1
+
+
+More about values
+-----------------
+In mathematics, real numbers have infinite precision, π has been calculated to 2.7 trillion digits
+In programming, floating point numbers have limited precision

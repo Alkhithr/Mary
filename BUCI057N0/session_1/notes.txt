@@ -1,0 +1,82 @@
+user: dcsprimer
+pwd: Pr0gramming
+
+Language -> assembler -> machine code -> 0 + 1
+Interpreted (line by line execution eg Python) <-> compiled languages (compile the program to 0+1 before anything is executed eg C)
+Java -> Virtual Machine (JVM) -> OS
+
+Quote: "A weekly typed language is not good because people die."
+
+Just Enough Python
+------------------
+
+IDE: Integrated Development Environment
+REPL: Read-Evaluate-Print-Loop
+
+integer = whole number
+float = decimals
+// is called integer division e.g. 10 // 3 = 3
+booleans can be True/False
+literal or literal value = An explicit value, written out by itself
+function = a named piece of code that can return a value
+Control statements = decide whether and how often some other, “controlled” statements are executed
+syntax = the set of rules that things in the language must follow
+
+Errors
+A syntax error is one recognized by the compiler
+A runtime error is one that causes your program to “crash”
+A logic error or semantic error is one that causes your program to produce incorrect results
+A user error is when the user provides invalid input to the program
+
+A program is code saved to a file
+
+Variables and Values
+--------------------
+
+on the computer, characters are represented in binary
+ASCII = American Standard Code for Information Interchange = 127 chars
+Unicode is an extension of ASCII = hundreds of thousands of characters
+
+Integers can be written in
+    binary (base 2 start with 0b),
+    octal (base 8 start with 0o),
+    decimal (base 10) or
+    hexadecimal (base 16 start with 0x)
+
+Parentheses = ()
+Brackets = []
+Braces = {}
+
+Bit operators
+
+Not: ~0b1100 == 0b0011
+And: 0b1100 & 0b1010 == 0b1000
+Or: 0b1100 | 0b1010 == 0b1110
+Exclusive or: 0b1100 ^ 0b1010 == 0b0110
+Left shift: 0b00010011 << 2 == 0b01001100
+Right shift: 0b01001100 >> 2 == 0b00010011
+
+prime is a number that is divisible only by itself (1,3,5,7,9,11 ...)
+
+
+Bit manipulation: https://wiki.python.org/moin/BitManipulation
+
+Functions
+---------
+top-level statements = statements not in functions
+
+
+
+0 + 0 = 0
+0 + 1 = 1
+1 + 0 = 1
+1 + 1 = 10
+
+0 - 0 = 0
+1 - 0 = 1
+1 - 1 = 0
+0 - 1 we can't do so we borrow 1 from the next column. This makes it 10 - 1 which is 1.
+
+0 * 0 = 0
+1 * 0 = 0
+1 * 1 = 1
